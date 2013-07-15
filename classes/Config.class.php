@@ -34,7 +34,7 @@ class Config {
         NodeType::FREE,
         NodeType::DESTINATION
     );
-    public static $maxIterations = 50;
+    public static $maxIterations = 150;
     
     /**
      * Inits Config loading initial config.
