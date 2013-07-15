@@ -69,7 +69,7 @@ class Map {
             foreach($rowArray as $char){
                 $type = $this->getNodeType($char);
                 $node = new Node($x, $y, $type);
-                $nodes["$x$y"] = $node;
+                $nodes["$x.$y"] = $node;
                 if($type==NodeType::SOURCE) $this->source = $node;
                 if($type==NodeType::DESTINATION) $this->destination = $node;
                 $x++;
@@ -106,8 +106,8 @@ class Map {
      * @return Node
      */
     public function getNode($x, $y){
-        if(!array_key_exists("$x$y", $this->nodes)) return false;
-        return $this->nodes["$x$y"];
+        if(!array_key_exists("$x.$y", $this->nodes)) return false;
+        return $this->nodes["$x.$y"];
     }
     
     /**

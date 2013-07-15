@@ -37,7 +37,7 @@ class Node {
      * @return string
      */
     public function getKey(){
-        $key = "{$this->x}{$this->y}";
+        $key = "{$this->x}.{$this->y}";
         return $key;
     }
 }
