@@ -89,7 +89,7 @@ class Astar implements Algorithm {
     public function find() {
         if($this->iteration==0) $this->start = microtime();
         ++$this->iteration;
-        if($this->iteration > Config::$maxIterations) die("MAX ITERATIONS REACHED! I did something wrong or the map bigger than allowed!\n");
+        if($this->iteration > Config::$maxIterations) die("MAX ITERATIONS REACHED! I did something wrong or the map is bigger than the allowed size!\n");
         
         //clear surounding nodes for current node; used to DRAW current iteration
         $this->currentSuroundingNodes = array();
