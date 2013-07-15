@@ -32,6 +32,8 @@ simple to use it!
 
 
 **Built-in MAPS:**
+- 20x6
+- 50x20
 - default
 - difficult
 - difficult2
